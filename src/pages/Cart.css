@@ -1,0 +1,109 @@
+/* src/pages/Cart.css */
+
+.cart-container {
+  padding: 1rem;
+}
+
+.cart-item {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  align-items: center;
+  background: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.cart-item img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.cart-item-details {
+  flex: 1;
+}
+
+.cart-item h3 {
+  margin: 0.5rem 0;
+}
+
+.cart-item input {
+  width: 60px;
+  padding: 0.3rem;
+  margin-right: 0.5rem;
+}
+
+/* REMOVE BUTTON (in item box) */
+.cart-item .remove-btn {
+  padding: 0.4rem 0.8rem;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+.cart-item .remove-btn:hover {
+  background: #c82333;
+}
+
+/* CHECKOUT BUTTON */
+.checkout-btn {
+  padding: 0.75rem;
+  background: #28a745;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+/* QUANTITY CONTROL STYLING */
+.qty-control {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem 0;
+}
+
+.qty-control button {
+  padding: 0.4rem 0.8rem;
+  font-size: 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.qty-control button:hover {
+  background: #0056b3;
+}
+
+.qty-control span {
+  font-weight: bold;
+  font-size: 1.1rem;
+  min-width: 20px;
+  text-align: center;
+}
+
+/* CHECKOUT POPUP */
+.popup {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background: #28a745;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  animation: fadeOut 4s forwards;
+}
+
+@keyframes fadeOut {
+  0%   { opacity: 1; }
+  90%  { opacity: 1; }
+  100% { opacity: 0; }
+}

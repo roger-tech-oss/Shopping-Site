@@ -1,0 +1,22 @@
+.filters {
+  display: flex;
+  gap: 1rem;
+  margin: 1rem;
+  flex-direction: column;
+}
+
+.filters select,
+.filters input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+@media (min-width: 600px) {
+  .filters {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
